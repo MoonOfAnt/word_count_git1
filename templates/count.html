@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>这里是count页面</h1>
+    <h2>刚刚的文本框里总共为{{count}}个字</h2>
+    <h2>刚刚的文本为</h2>
+    {{text}}<br /><br />
+    <h2>按字数排序为</h2>
+    {% for word,count in word_dict %}
+    {{word}} - {{count}}<br />
+    {% endfor %}
+    <br /><br /><br />
+    <a href="..">回到主页</a>
+</body>
+</html>
